@@ -1,0 +1,12 @@
+$border: 1px solid #ccc;
+
+.scss-test {
+  border-radius: 3px;
+  border: $border;
+  margin: 20px;
+  text-align: center;
+
+  h2 {
+    size: 40px;
+  }
+}

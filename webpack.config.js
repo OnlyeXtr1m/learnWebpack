@@ -39,6 +39,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.s[ac]ss$/,
+                use: [{loader: MiniCssExtractPlugin.loader, options: {}}, "css-loader", "sass-loader"]
+            },
+            {
                 test: /\.css$/,
                 use: [{loader: MiniCssExtractPlugin.loader, options: {}}, "css-loader"]
             },
